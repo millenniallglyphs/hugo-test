@@ -1,0 +1,10 @@
+<link rel="stylesheet" type="text/css" title="stylesheet" href="/css/style.css">
+
+{{ $pathseg := resources.Get "/js/library/pathseg.js" }}
+{{ $sequence := resources.Get "/js/library/sequence.js" }}
+{{ $js := slice $pathseg $sequence | resources.Concat "js/bundle.js" }}
+
+<script src="/js/library/p5.js"></script>
+<script src="/js/library/matter.js"></script>
+<script src="/disease/vehicle.js"></script>
+<script src="/js/library/jquery-3.5.0.min.js"></script>

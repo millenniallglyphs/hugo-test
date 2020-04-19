@@ -1,0 +1,9 @@
+/*
+ The default CSS file.
+
+ You can use @import here to include CSS inside folders
+*/
+/*@import "imports/reset.css";*/body,canvas,html{margin:0!important;padding:0!important}body{background:#000;color:#fff}ul{padding:0}.canvased,ul{list-style:none}.canvased{width:100vw;height:100vh;display:none}#menu{position:absolute;color:#fff}#Firecanvas{background:orange;
+  /*background-image: url(/media/sketches/MAMA-Type.png);*/background-size:contain;background-position:50%}#Floodcanvas{background:blue;
+  /*background-image: url(/media/sketches/MAMA-Type.png);*/background-size:contain;background-position:50%}#Droughtcanvas{background:brown}#Diseasecanvas{background:#ff0}#Warcanvas{background:red}.displaycanvas{display:block}#fire-test{position:absolute;width:15vw;Height:30vh;left:24vw;top:18vh;background-size:contain;background-position:bottom;background-repeat:no-repeat}#menu{left:20px}#menu>li{padding-top:10px}.icon{width:50px;background:#000}
+/*# sourceMappingURL=styles.css.map */

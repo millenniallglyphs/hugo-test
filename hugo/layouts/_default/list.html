@@ -1,0 +1,36 @@
+{{ partial "head" . }}
+
+<ul id="menu">
+  {{ range (where .Site.Pages "Type" "sketches") }}
+    {{ range .Pages }}
+      <li id="{{.Title}}">
+        {{ .Title }}
+      </li>
+    {{ end }}
+  {{ end }}
+  </ul>
+  <ul id="canvashold">
+    {{ range first 5 (where .Site.Pages "Type" "sketch") }}
+      <li class="canvased" id="{{.Title}}canvas">
+      </li>
+      <!--
+      {{ if .Params.js }}
+        <script src="{{ .Params.js }}"></script>
+
+      {{ end }}
+      -->
+    {{ end }}
+  </ul>
+
+  <div id="causedejour">
+    {{ range (where .Site.Pages "Type" "causes") }}
+      {{ range .Pages }}
+        <div class="cause-item">
+          <p> {{ .Title }} </p>
+          <p> {{ .Content }}</p>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+
+{{ partial "footer" . }}

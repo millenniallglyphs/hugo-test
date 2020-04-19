@@ -1,0 +1,90 @@
+/*
+ The default CSS file.
+
+ You can use @import here to include CSS inside folders
+*/
+/*@import "imports/reset.css";*/
+
+html,
+body,
+canvas {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.canvased {
+  width: 100vw;
+  height: 100vh;
+  list-style: none;
+  display: none;
+}
+
+#menu {
+  position: absolute;
+  color: white;
+}
+
+
+#Firecanvas {
+  background: orange;
+  /*background-image: url(/media/sketches/MAMA-Type.png);*/
+  background-size: contain;
+  background-position: center;
+}
+
+#Floodcanvas {
+  background: blue;
+  /*background-image: url(/media/sketches/MAMA-Type.png);*/
+  background-size: contain;
+  background-position: center;
+}
+
+#Droughtcanvas {
+  background: brown;
+}
+
+#Diseasecanvas {
+  background: yellow;
+}
+
+#Warcanvas {
+  background: red;
+}
+
+.displaycanvas {
+  display: block;
+}
+
+#fire-test {
+  position: absolute;
+  width: 15vw;
+  Height: 30vh;
+  left: 24vw;
+  top: 18vh;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#menu {
+  left: 20px;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+.icon {
+  width: 50px;
+  background: black;
+}
