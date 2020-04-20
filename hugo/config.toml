@@ -6,7 +6,7 @@ baseurl = "/" # The subpath of your site, e.g. / or /blog
 languageCode = "en-us"
 languageLang = "en"
 defaultContentLanguage = "en"
-title = "My New Hugo Site"
+title = "Mama"
 
 # Build settings
 # --------------
@@ -19,7 +19,7 @@ destination = "../dist/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Enable this to have links relativized by Hugo
-# E.g,  if your /post/first/ page contains a link 
+# E.g,  if your /post/first/ page contains a link
 # to /about/, Hugo will rewrite the URL to ../../about/
 relativeURLs = false
 
@@ -32,11 +32,7 @@ enableEmoji = true
 # Site Params
 # -------------
 [params]
-description = '''
-Write an awesome description for your new site here. You can edit this
-line in config.yml. It will appear in your document head meta (for
-Google search results) and in your RSS feed description.
-'''
+description = "SEO description here"
 author = "Your name"
 
 # Site Menus
@@ -73,4 +69,3 @@ author = "Your name"
 #   name = "date"
 #   pattern = "2006"
 #   weight = 10
-

@@ -1,10 +1,13 @@
 {{ partial "head" . }}
 
 <ul id="menu">
+  <li id="info"><img class="icon" src="/img/i-info.png"></img></li>
+  <li><img class="icon" src="/img/i-volume.png"></img></li>
+  <hr>
   {{ range (where .Site.Pages "Type" "sketches") }}
-    {{ range .Pages }}
+    {{ range .Pages.Reverse }}
       <li id="{{.Title}}">
-        {{ .Title }}
+        <img class="icon" src="/img/i-{{.Title}}.png"></img>
       </li>
     {{ end }}
   {{ end }}
@@ -16,18 +19,21 @@
       <!--
       {{ if .Params.js }}
         <script src="{{ .Params.js }}"></script>
-
       {{ end }}
       -->
     {{ end }}
   </ul>
 
-  <div id="causedejour">
+  <div class="causedejour" class="casenon">
     {{ range (where .Site.Pages "Type" "causes") }}
-      {{ range .Pages }}
+      {{ range .Pages.Reverse }}
         <div class="cause-item">
-          <p> {{ .Title }} </p>
-          <p> {{ .Content }}</p>
+          <div class="compareheight">
+          </div>
+          <div class="cause-content">
+            <p> {{ .Title }} </p>
+            <p> {{ .Content }}</p>
+          </div>
         </div>
       {{ end }}
     {{ end }}

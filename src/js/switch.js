@@ -1,6 +1,5 @@
 $( document ).ready(function() {
     toggleCanvas("#Diseasecanvas");
-    console.log("hello");
 });
 
 
@@ -22,6 +21,11 @@ $("#Disease").click(function() {
 
 $("#War").click(function() {
   toggleCanvas("#Warcanvas")
+});
+
+$("#info").click(function() {
+  $(".causedejour").toggleClass("casenon");
+  console.log("hello");
 });
 
 function toggleCanvas(target) {
